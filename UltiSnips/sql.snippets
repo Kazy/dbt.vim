@@ -11,17 +11,13 @@ endsnippet
 
 snippet %% "block"
 {%- block ${1:tag} -%}
-
 	$2
-
 {%- endblock $1 -%}
 endsnippet
 
 snippet block "block"
 {%- block ${1:tag} -%}
-
 	$2
-
 {%- endblock $1 -%}
 endsnippet
 
@@ -31,9 +27,7 @@ endsnippet
 
 snippet set "set block"
 {%- set ${1:name} -%}
-
 	$2
-
 {%- endset -%}
 endsnippet
 
@@ -59,80 +53,56 @@ endsnippet
 
 snippet filter "filter"
 {%- filter ${1:filter} -%}
-
 	$2
-
 {%- endfilter -%}
 endsnippet
 
 snippet for "for"
 {%- for ${1:item} in ${2:sequence} -%}
-
 	$3
-
 {%- endfor -%}
 endsnippet
 
 snippet for "for dict"
 {%- for ${1:key}, ${2:value} in ${3:dict}.items() -%}
-
 	$4
-
 {%- endfor -%}
 endsnippet
 
 snippet for "for/else"
 {%- for ${1:item} in ${2:sequence} -%}
-
 	$3
-
 {%- else -%}
-
 	$4
-
 {%- endfor -%}
 endsnippet
 
 snippet if "if"
 {%- if ${1:expr} -%}
-
 	$2
-
 {%- endif -%}
 endsnippet
 
 snippet if "if/else"
 {%- if ${1:expr} -%}
-
 	$2
-
 {%- else -%}
-
 	$3
-
 {%- endif -%}
 endsnippet
 
 snippet if "if/elif/else"
 {%- if ${1:expr} -%}
-
 	$2
-
 {%- elif $3 -%}
-
 	$4
-
 {%- else -%}
-
 	$5
-
 {%- endif -%}
 endsnippet
 
 snippet macro "macro"
 {%- macro ${1:name}(${2}) -%}
-
 	$3
-
 {%- endmacro -%}
 endsnippet

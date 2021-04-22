@@ -1,24 +1,24 @@
 snippet ref "ref"
-    {{ ref('$1'}) }}
+	{{ ref('$1'}) }}
 snippet source "source"
-    {{ source('${1:source}', '${2:table}') }}
+	{{ source('${1:source}', '${2:table}') }}
 snippet config "config block"
-    {{ config(
-    	${1:key}='${2:value}',$3
-    ) }}
+	{{ config(
+	    ${1:key}='${2:value}',$3
+	) }}
 
-    $4
+	$4
 snippet get "config get"
-    {%- set ${1:var} = config.get('${2:config}') -%}
+	{%- set ${1:var} = config.get('${2:config}') -%}
 snippet require "config require"
-    {%- set ${1:var} = config.require('${2:config}') -%}
+	{%- set ${1:var} = config.require('${2:config}') -%}
 snippet log "log"
-    {%- do log(${1:var}${2:, info=${3|True,False|}}) -%}
+	{%- do log(${1:var}${2:, info=${3|True,False|}}) -%}
 snippet debug "debug"
-    {{ debug() }}
+	{{ debug() }}
 snippet raise "raise_compiler_error"
-    {%- exceptions.raise_compiler_error('${1:message}') -%}
+	{%- exceptions.raise_compiler_error('${1:message}') -%}
 snippet warn "warn"
-    {%- do exceptions.warn('${1:message}') -%}
+	{%- do exceptions.warn('${1:message}') -%}
 snippet run "run_query"
-    {% set ${1:result} = run_query(${2:query}) %}
+	{% set ${1:result} = run_query(${2:query}) %}

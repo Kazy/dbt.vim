@@ -2,70 +2,70 @@
 extends jinja2
 
 snippet % "inline block"
-    {% $1 %}
+	{% $1 %}
 snippet iblock "inline block"
-    {% $1 %}
-snippet %% "block"
-    {%- block ${1:tag} -%}
-    	$2
-    {%- endblock $1 -%}
+	{% $1 %}
+snippet %- "block"
+	{%- block ${1:tag} -%}
+	    $2
+	{%- endblock $1 -%}
 snippet block "block"
-    {%- block ${1:tag} -%}
-    	$2
-    {%- endblock $1 -%}
+	{%- block ${1:tag} -%}
+	    $2
+	{%- endblock $1 -%}
 snippet set "set"
-    {%- set ${1:name} = ${2:'value'} -%}
+	{%- set ${1:name} = ${2:'value'} -%}
 snippet set "set block"
-    {%- set ${1:name} -%}
-    	$2
-    {%- endset -%}
+	{%- set ${1:name} -%}
+	    $2
+	{%- endset -%}
 snippet { "var"
-    {{ $1 }}
+	{{ $1 }}
 snippet var "var"
-    {{ $1 }}
+	{{ $1 }}
 snippet # "comment"
-    {#- $1 -#}
+	{#- $1 -#}
 snippet comment "comment"
-    {#- $1 -#}
+	{#- $1 -#}
 snippet do "do"
-    {%- do $1 -%}
+	{%- do $1 -%}
 snippet filter "filter"
-    {%- filter ${1:filter} -%}
-    	$2
-    {%- endfilter -%}
+	{%- filter ${1:filter} -%}
+	    $2
+	{%- endfilter -%}
 snippet for "for"
-    {%- for ${1:item} in ${2:sequence} -%}
-    	$3
-    {%- endfor -%}
+	{%- for ${1:item} in ${2:sequence} -%}
+	    $3
+	{%- endfor -%}
 snippet for "for dict"
-    {%- for ${1:key}, ${2:value} in ${3:dict}.items() -%}
-    	$4
-    {%- endfor -%}
+	{%- for ${1:key}, ${2:value} in ${3:dict}.items() -%}
+	    $4
+	{%- endfor -%}
 snippet for "for/else"
-    {%- for ${1:item} in ${2:sequence} -%}
-    	$3
-    {%- else -%}
-    	$4
-    {%- endfor -%}
+	{%- for ${1:item} in ${2:sequence} -%}
+	    $3
+	{%- else -%}
+	    $4
+	{%- endfor -%}
 snippet if "if"
-    {%- if ${1:expr} -%}
-    	$2
-    {%- endif -%}
+	{%- if ${1:expr} -%}
+	    $2
+	{%- endif -%}
 snippet if "if/else"
-    {%- if ${1:expr} -%}
-    	$2
-    {%- else -%}
-    	$3
-    {%- endif -%}
+	{%- if ${1:expr} -%}
+	    $2
+	{%- else -%}
+	    $3
+	{%- endif -%}
 snippet if "if/elif/else"
-    {%- if ${1:expr} -%}
-    	$2
-    {%- elif $3 -%}
-    	$4
-    {%- else -%}
-    	$5
-    {%- endif -%}
+	{%- if ${1:expr} -%}
+	    $2
+	{%- elif $3 -%}
+	    $4
+	{%- else -%}
+	    $5
+	{%- endif -%}
 snippet macro "macro"
-    {%- macro ${1:name}(${2}) -%}
-    	$3
-    {%- endmacro -%}
+	{%- macro ${1:name}(${2}) -%}
+	    $3
+	{%- endmacro -%}
