@@ -22,7 +22,7 @@ let s:jinja_path_plugin = globpath(&rtp, "syntax/jinja.vim")
 let s:jinja_path_polyglot = globpath(&rtp, "syntax/jinja2.vim")
 
 if filereadable(s:jinja_path_config)
-  let s:dbt_jinja_path = s:jinja_path_plugin
+  let s:dbt_jinja_path = s:jinja_path_config
 elseif file_readable(s:jinja_path_plugin)
   let s:dbt_jinja_path = s:jinja_path_plugin
 elseif filereadable(s:jinja_path_polyglot)
