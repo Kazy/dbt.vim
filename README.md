@@ -5,7 +5,9 @@ A Simple plugin that makes writing [dbt](https://www.getdbt.com/) in vim/Neovim 
 
 ## Requirements
 
-No hard requirements, but if you need the full featured experience you'd need:
+This plugins depends on [vim-SyntaxRange](https://github.com/inkarkat/vim-SyntaxRange).
+
+If you need the full featured experience you'd need:
 
 - Jinja 2 syntax. I recommend using either the one from
 [Glench](https://github.com/Glench/Vim-Jinja2-Syntax) or from
